@@ -1,15 +1,22 @@
-import React from 'react'
-import { Route, Routes } from 'react-router-dom';
-import Mainpage from './components/mainpage'
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Mainpage from "./components/Mainpage";
 
-function App() {
-	return (
-		<div>
-			<Routes>
-        <Route path="/" element={<Mainpage />} />
+const App: React.FC = () => {
+  return (
+    <>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Mainpage />
+            </>
+          }
+        />
       </Routes>
-		</div>
-	)
-}
+    </>
+  );
+};
 
-export default App
+export default App;
